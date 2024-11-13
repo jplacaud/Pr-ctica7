@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Mi Primer Formulario</h1>
+
+    <h2>Carreras</h2>
+    <ul>
+        <li>Ing. Sistemas Computacionales</li>
+        <li>Ing. Inteligencia Artificial</li>
+        <li>Lic. Análisis de datos</li>
+    </ul>
+
+    <form action="submit_form.php" method="post">
+        <div class="image-container">
+            <img height="200px" width="200px" src="DEVF.png" alt="DEVF">
+            <img height="200px" width="200px" src="ESCOM.png" alt="ESCOM">
+            <img height="200px" width="200px" src="CSSHTML.jpg" alt="HTML CSS">
+        </div>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Contáctanos</h2>
+    <p>Correo:<a href="#">escom@ipn.mx</a></p>
+    <ul>
+        <li><a href="#">POLÍTICAS DE PRIVACIDAD</a></li>
+        <li><a href="#">TÉRMINOS Y CONDICIONES</a></li>
+
+    </ul>
+</body>
+</html>
